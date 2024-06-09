@@ -1,0 +1,74 @@
+[
+  {
+    "imgSrc": "assets/images/explore/e1.jpg",
+    "buttonText": "best rated",
+    "title": "tommy helfinger bar",
+    "rating": 5.0,
+    "ratingsCount": 10,
+    "priceRange": "5$-300$",
+    "category": "restaurant",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "close now"
+  },
+  {
+    "imgSrc": "assets/images/explore/e2.jpg",
+    "buttonText": "featured",
+    "title": "swim and dine resort",
+    "rating": 4.5,
+    "ratingsCount": 8,
+    "priceRange": "50$-500$",
+    "category": "hotel",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "open now"
+  },
+  {
+    "imgSrc": "assets/images/explore/e3.jpg",
+    "buttonText": "best rated",
+    "title": "europe tour",
+    "rating": 5.0,
+    "ratingsCount": 15,
+    "priceRange": "5k$-10k$",
+    "category": "destination",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "close now"
+  },
+  {
+    "imgSrc": "assets/images/explore/e4.jpg",
+    "buttonText": "most view",
+    "title": "banglow with swiming pool",
+    "rating": 5.0,
+    "ratingsCount": 10,
+    "priceRange": "10k$-15k$",
+    "category": "real estate",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "close now"
+  },
+  {
+    "imgSrc": "assets/images/explore/e5.jpg",
+    "buttonText": "featured",
+    "title": "vintage car expo",
+    "rating": 4.2,
+    "ratingsCount": 8,
+    "priceRange": "500$-1200$",
+    "category": "automotion",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "open now"
+  },
+  {
+    "imgSrc": "assets/images/explore/e6.jpg",
+    "buttonText": "best rated",
+    "title": "thailand tour",
+    "rating": 5.0,
+    "ratingsCount": 15,
+    "priceRange": "5k$-10k$",
+    "category": "destination",
+    "personImgSrc": "assets/images/explore/person.png",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incid ut labore et dolore magna aliqua....",
+    "status": "close now"
+  }
+]
