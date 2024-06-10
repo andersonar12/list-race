@@ -1,0 +1,58 @@
+[
+  {
+    "imgSrc": "assets/images/clients/c1.png",
+    "name": "Tom Leakar",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c2.png",
+    "name": "monirul islam",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c3.png",
+    "name": "Shohrab Hossain",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c4.png",
+    "name": "Tom Leakar",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c1.png",
+    "name": "Tom Leakar",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c2.png",
+    "name": "monirul islam",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c3.png",
+    "name": "Shohrab Hossain",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  },
+  {
+    "imgSrc": "assets/images/clients/c4.png",
+    "name": "Tom Leakar",
+    "location": "london, UK",
+    "rating": 5,
+    "comment": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis eaque."
+  }
+]

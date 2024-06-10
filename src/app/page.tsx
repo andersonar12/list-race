@@ -9,7 +9,7 @@ import {
   Blog,
   Subscription,
   Footer,
-} from "../../components/sections";
+} from "../components/sections";
 
 export default function Home() {
   return (

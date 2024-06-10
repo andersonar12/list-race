@@ -10,12 +10,7 @@ export const Head = () => {
       <link rel="stylesheet" href="/assets/css/linearicons.css" />
       <link rel="stylesheet" href="/assets/css/animate.css" />
       <link rel="stylesheet" href="/assets/css/flaticon.css" />
-      <link rel="stylesheet" href="/assets/css/slick.css" />
-      <link rel="stylesheet" href="/assets/css/slick-theme.css" />
       <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
-      {/* <link rel="stylesheet" href="/assets/css/bootsnav.css" /> */}
-      {/* <link rel="stylesheet" href="/assets/css/style.css" /> */}
-      {/* <link rel="stylesheet" href="/assets/css/responsive.css" /> */}
     </head>
   );
 };

@@ -35,7 +35,7 @@
 
 @media screen and (max-width:991px){
 	.welcome-hero-serch-box {display: flex; flex-direction: column;align-items: center;}
-	.welcome-hero-btn {margin-top: 30px;}
+	.welcome-hero-btn {margin-top:30px;}
 	.welcome-hero-form {width: 100%;}
 	.explore-price-box {padding: 0 5px;margin: 0 5px;}
 	.footer-menu ul.footer-menu-item li a {padding-left: 15px;}
@@ -46,6 +46,8 @@
 }/*max-width:768px*/
 
 @media screen and (max-width:767px){
+	.welcome-hero-btn {margin-top:80px;}
+
 	.welcome-hero-txt h2 {font-size: 24px;}
 	.single-welcome-hero {height:auto;background: transparent;padding: 100px 0;display: block;}
 	.welcome-hero-txt {padding-top: 80px;}

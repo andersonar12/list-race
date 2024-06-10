@@ -12,7 +12,7 @@ export const ListsTopics = () => {
                     <i className="flaticon-restaurant"></i>
                   </div>
                   <h2>
-                    <a href="#">resturent</a>
+                    <a href="#">restaurant</a>
                   </h2>
                   <p>150 listings</p>
                 </div>

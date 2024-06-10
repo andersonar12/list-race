@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Head } from "../../components/Head";
-import { Scripts } from "../../components/Scripts";
+import { Head } from "../components/Head";
+import { Scripts } from "../components/Scripts";
 
 export const metadata: Metadata = {
   title: "Directory Landing Page",

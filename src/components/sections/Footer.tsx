@@ -1,3 +1,5 @@
+import ScrollToTop from "../ScrollToTop";
+
 export const Footer = () => {
   return (
     <>
@@ -73,19 +75,7 @@ export const Footer = () => {
         </div>
         {/* <!--/.container--> */}
 
-        <div id="scroll-Top">
-          <div className="return-to-top">
-            <i
-              className="fa fa-angle-up "
-              id="scroll-top"
-              data-toggle="tooltip"
-              data-placement="top"
-              title=""
-              data-original-title="Back to Top"
-              aria-hidden="true"
-            ></i>
-          </div>
-        </div>
+        <ScrollToTop />
         {/* <!--/.scroll-Top--> */}
       </footer>
       {/* <!--/.footer--> */}

@@ -1,4 +1,17 @@
+"use client";
+import { useCreateAccount } from "@/hooks/useCreateAccount";
+import { useState } from "react";
+import { Alert } from "../Alert";
+import { Spinner } from "../Spinner";
 export const Subscription = () => {
+  const [email, setEmail] = useState("");
+  const { result, postRequest, open, setOpen, loading } = useCreateAccount();
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    postRequest(email);
+  };
+
   return (
     <>
       {/* <!--subscription strat --> */}
@@ -14,13 +27,16 @@ export const Subscription = () => {
           <div className="row">
             <div className="col-sm-12">
               <div className="subscription-input-group">
-                <form action="#">
+                <form onSubmit={handleSubmit} action="#">
                   <input
+                    onChange={(e) => setEmail(e.target.value)}
                     type="email"
                     className="subscription-input-form"
                     placeholder="Enter your email here"
                   />
-                  <button className="appsLand-btn subscribe-btn">creat account</button>
+                  <button disabled={loading} type="submit" className="appsLand-btn subscribe-btn">
+                    {loading && <Spinner pixel={40} />} create account
+                  </button>
                 </form>
               </div>
             </div>
@@ -29,6 +45,7 @@ export const Subscription = () => {
       </section>
       {/* <!--/subscription-->	 */}
       {/* <!--subscription end --> */}
+      <Alert result={result} open={open} setOpen={setOpen} />
     </>
   );
 };

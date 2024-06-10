@@ -1,0 +1,23 @@
+[
+  {
+    "imgSrc": "assets/images/blog/b1.jpg",
+    "title": "How to find your Desired Place more quickly",
+    "author": "admin",
+    "date": "march 2018",
+    "description": "Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna."
+  },
+  {
+    "imgSrc": "assets/images/blog/b2.jpg",
+    "title": "Find your dream place efficiently and effortlessly.",
+    "author": "admin",
+    "date": "january 2020",
+    "description": "Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna."
+  },
+  {
+    "imgSrc": "assets/images/blog/b3.jpg",
+    "title": "Techniques to quickly identify the perfect place for you.",
+    "author": "admin",
+    "date": "june 2024",
+    "description": "Lorem ipsum dolor sit amet, consectetur de adipisicing elit, sed do eiusmod tempore incididunt ut labore et dolore magna."
+  }
+]

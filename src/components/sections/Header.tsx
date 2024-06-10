@@ -1,5 +1,79 @@
 "use client";
 
+import { useEffect } from "react";
+
+const navbarScrollspy = (): void => {
+  const navScrollSpy = document.querySelector(".navbar-scrollspy") as HTMLElement;
+  const getNav = document.querySelector("nav.navbar.bootsnav") as HTMLElement;
+
+  if (!getNav || !navScrollSpy) return;
+
+  const offset = getNav.offsetHeight;
+
+  document.addEventListener("scroll", () => {
+    const sections = document.querySelectorAll<HTMLElement>(".navbar-scrollspy section");
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= offset && rect.bottom >= offset) {
+        document.querySelectorAll<HTMLElement>(".scroll").forEach((link) => {
+          link.classList.remove("active");
+          const anchor = link.querySelector("a");
+          if (anchor && section.getAttribute("id") === anchor.hash.substring(1)) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  });
+
+  document.querySelectorAll<HTMLElement>(".scroll").forEach((link) => {
+    link.addEventListener("click", function (event: Event) {
+      event.preventDefault();
+      console.log("Scrolling...");
+
+      document
+        .querySelectorAll<HTMLElement>(".scroll")
+        .forEach((l) => l.classList.remove("active"));
+      this.classList.add("active");
+
+      document
+        .querySelectorAll<HTMLElement>(".navbar-collapse")
+        .forEach((nav) => nav.classList.remove("in"));
+
+      document.querySelectorAll<HTMLElement>(".navbar-toggle .fa").forEach((icon) => {
+        icon.classList.remove("fa-times");
+        icon.classList.add("fa-bars");
+      });
+
+      const anchor = this.querySelector("a");
+      if (!anchor) return;
+      const section = document.querySelector<HTMLElement>(anchor.getAttribute("href") || "");
+      if (!section) return;
+      const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
+      const minusDesktop = parseInt(getNav.getAttribute("data-minus-value-desktop") || "0", 10);
+      const minusMobile = parseInt(getNav.getAttribute("data-minus-value-mobile") || "0", 10);
+      const speed = parseInt(getNav.getAttribute("data-speed") || "500", 10);
+      const windowWidth = window.innerWidth;
+      const position = sectionTop - (windowWidth > 992 ? minusDesktop : minusMobile);
+
+      window.scrollTo({
+        top: position,
+        behavior: "smooth",
+      });
+    });
+  });
+
+  let resizeTimer: NodeJS.Timeout;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      const newOffset = getNav.offsetHeight;
+      const data = { options: { offset: newOffset } }; // Simulación de actualización de datos
+      document.dispatchEvent(new CustomEvent("bs.scrollspy", { detail: data }));
+    }, 200);
+  });
+};
+
 export const Header = () => {
   const currency = [
     { value: "usd", label: "USD" },
@@ -12,6 +86,11 @@ export const Header = () => {
     { value: "Bangla", label: "BN" },
     { value: "Arabic", label: "AB" },
   ];
+
+  useEffect(() => {
+    navbarScrollspy();
+  }, []);
+
   return (
     <>
       {/* <!--header-top start --> */}
